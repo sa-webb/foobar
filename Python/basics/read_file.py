@@ -1,6 +1,3 @@
-file_input = open('output.txt', 'r')
-
-for line in file_input:
-    print(line)
-
-file_input.close()
+with open('./output.txt', 'r') as open_file:
+    for line in open_file:
+        print(line)
