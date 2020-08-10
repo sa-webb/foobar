@@ -8,9 +8,9 @@ from subs.sub1.b import b
 from c import c
 
 custom_package.foo.foo_script.foo()
-# custom_package.foo.foo_script.bar() NOT VISIBLE/AVAILABLE
+# custom_package.foo.foo_script.bar() NOT VISIBLE OR CALLABLE
 
-# custom_package.bar.bar_script.bar() VISIBLE BUT NOT AVAILABLE
+# custom_package.bar.bar_script.bar() VISIBLE BUT NOT CALLABLE
 
 a()
 b()
