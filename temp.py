@@ -12,6 +12,42 @@ def read_employees(csv_file_location):
     return employee_list
 
 
+employee_list = read_employees('./employees.csv')
+
+l = len(employee_list)
+
+departments = []
+usernames = []
+full_names = []
+
+
+for i in range(0, l):
+    values = employee_list[i].values()
+    for i in range(0, 3):
+        if i == 0:
+            departments.append(values[i])
+        if i == 1:
+            usernames.append(values[i])
+        if i == 2:
+            full_names.append(values[i])
+
+result = []
+
+for i in range(0, l):
+    temp_dict = {
+        'Department': departments[i], 'Username': usernames[i], 'Full Name': full_names[i]}
+    result.append(temp_dict)
+
+print(result)
+
+new_list = []
+for i in employee_list:
+    print(employee_list[0])
+    # print(i)
+print(len(employee_list))
+print(new_list)
+
+
 def process_data(employee_list):
     department_list = []
     for employee_data in employee_list:
