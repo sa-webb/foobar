@@ -2,3 +2,5 @@ Resources
 *DS_Store
 CPlusPlus/non-manipulating-algorithms/*.out
 **/node_modules
+
+**/__pycache__
