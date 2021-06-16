@@ -4,3 +4,5 @@ CPlusPlus/non-manipulating-algorithms/*.out
 **/node_modules
 
 **/__pycache__
+
+**/settings.json
